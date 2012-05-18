@@ -12,10 +12,7 @@ object Test {
        def prompt = "TestInterpreter> "
        def welcomeMsg = """Welcome to Awesomeness!
 This is my version of the Scala interpreter"""
-       def helpMsg = """This is where I should
-list help of commands.  For now:
-:help - Prints this message
-:quit - Makes me sad"""
+       def helpMsg = """This is printed *before* the help for eveyr command!"""
        bind("josh", new MyClass("josh"))
        autoImport("test._")
      }
